@@ -1,0 +1,95 @@
+{ "steps": [
+        {
+            "stepNumber": 1,
+            "stepTitle": "Tour & Offer",
+            "subSteps": [
+                {   
+                    "full": "Schedule tour",
+                    "short": "Schedule tour"
+                },
+                {
+                    "full": "Make offer",
+                    "short": "Make offer"
+                },
+                {
+                    "full": "Counter offer received",
+                    "short": "COR"
+                },
+                {
+                    "full": "Offer accepted",
+                    "short": "OA"
+                }
+            ],
+            "status": "active"
+        },
+        {
+            "stepNumber": 2,
+            "stepTitle": "3rd party providers for buyers", 
+            "subSteps": [
+                {   
+                    "full": "Broker Collider",
+                    "short": "Broker Collider"
+                },
+                {
+                    "full": "Choose Lender",
+                    "short": "Choose lender"
+                },
+                {
+                    "full": "Order Title Search",
+                    "short": "OTS"
+                },
+                {
+                    "full": "Choose Insurance",
+                    "short": "CI"
+                }
+            ],
+            "status": "disabled"
+        },
+        {
+            "stepNumber": 3,
+            "stepTitle": "Contract", 
+            "subSteps": [
+                {   
+                    "full": "Contract Issued",
+                    "short": "CI"
+                },
+                {
+                    "full": "Contract Comments",
+                    "short": "CC"
+                },
+                {
+                    "full": "Contract Ready",
+                    "short": "CR"
+                },
+                {
+                    "full": "Contract Signed",
+                    "short": "CI"
+                }
+            ],
+            "status": "disabled"
+        },
+        {
+            "stepNumber": 4,
+            "stepTitle": "Closing", 
+            "subSteps": [
+                {   
+                    "full": "Broker Collider",
+                    "short": "Broker Collider"
+                },
+                {
+                    "full": "Choose lender",
+                    "short": "Choose lender"
+                },
+                {
+                    "full": "Order title search",
+                    "short": "OTS"
+                },
+                {
+                    "full": "Choose insurance",
+                    "short": "CI"
+                }
+            ],
+            "status": "disabled"
+        }
+    ]
+}

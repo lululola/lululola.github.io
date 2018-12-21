@@ -1,0 +1,74 @@
+{   "user": {
+        "img": "https://via.placeholder.com/160x160",
+        "name": "Name Surname",
+        "company": "Upper East Side Property",
+        "tours": 239,
+        "flyers": 239,
+        "accepted": "Cornell St",
+        "property": {
+            "address": "239 East 63rd Street",
+            "img": "https://via.placeholder.com/320x200",
+            "description": "Prime Upper East Side Multi Family",
+            "price": 4000000
+        }
+    },
+
+    "statistics": {
+        "potential_buyers": {
+            "week": 10,
+            "total": 24
+        }, 
+        "similar_properties": {
+            "week": 3,
+            "total": 11
+        },
+        "similar_properties_sold": {
+            "week": 1,
+            "total": 3
+        },
+        "growth": {
+            "week": 13,
+            "total": 32
+        },
+        "diagram": {
+            "img": "https://via.placeholder.com/445x300"
+        }
+    },
+
+    "properties": [
+        {
+            "id": 285729857,
+            "owner": {
+                "name": "Name Surname",
+                "owned": 14,
+                "sold": 6,
+                "bought": 2
+            },
+            "price": 4000000,
+            "deposit": 150000,
+            "diligence": 12,
+            "closing": 8,
+            "conditions": true, 
+            "address": "This is the address",
+            "financing": "All cash",
+            "attorney": "Name Surname"
+        },
+        {
+            "id": 348723523,
+            "owner": {
+                "name": "Name Surname",
+                "owned": 32,
+                "sold": 17,
+                "bought": 10
+            },
+            "price": 7000000,
+            "deposit": 840000,
+            "diligence": 18,
+            "closing": 14,
+            "conditions": false,
+            "address": "This is the address",
+            "financing": "All cash",
+            "attorney": "Name Surname"
+        }
+    ]
+}

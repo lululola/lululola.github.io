@@ -1,0 +1,1291 @@
+@import "fonts.sass"
+
+$white: #ffffff
+$yellow: #e4bf00
+$dark-yellow: #cdac39
+$black: #000000
+$grey: #151515
+
+$font-xlg: 4vw
+$font-lg: 2.4vw
+$font-m: 1.35vw
+$font-s: 1.2vw
+$font-xs: 0.9vw
+
+$font-primary: "Myriad Pro"
+$font: "Century Gothic"
+
+//backgrounds
+*
+    font-family: $font-primary, sans-serif
+    font-weight: 100
+    letter-spacing: 0.05vw
+    color: $white
+
+body  
+    overflow-x: hidden
+
+::-webkit-scrollbar 
+    width: 0px
+    background: transparent
+.main-titles 
+    p 
+        font-family: $font 
+a:hover, button:hover 
+    cursor: pointer
+button
+    padding: 0
+    border: none
+    background: none   
+h1, h2, h3, h4, h5, h6, p
+    span 
+        color: $yellow
+h1 
+    font-size: $font-m
+h2
+    font-size: $font-xlg
+    font-weight: 700
+    span 
+        font-weight: 700
+p 
+    font-size: $font-m
+    //padding-bottom: 1.5625vw
+.capitalize 
+    text-transform: capitalize !important
+
+.grey-form 
+    box-sizing: border-box
+    background-color: $grey 
+    border: 1px solid $yellow
+    padding: 50px
+    display: flex 
+    flex-direction: column
+    font-family: $font
+    p 
+        max-width: 80%
+        line-height: 32px
+    .form-row 
+        display: flex 
+        flex-direction: row
+        margin-bottom: 20px
+        align-items: center
+        align-content: center
+    label  
+        flex: 1
+        vertical-align: middle
+        font-size: 32px
+        line-height: normal
+        align-self: center
+        margin-right: 20px
+    input 
+        flex: 3.5
+        display: inline-block 
+        font-family: $font
+        align-self: center
+button
+    outline: none !important
+    box-shadow: none
+    &:focus
+        outline: none !important
+    &:hover
+        cursor: pointer
+input, textarea
+    border: 0.05vw $white solid
+button
+    padding: 0.55vw 3vw
+    font-size: $font-xs
+textarea, input
+    &:focus
+        outline: none !important
+        border: 0.05vw $yellow solid !important
+        
+
+.container
+    width: 87%
+    margin: 0 auto
+    height: 100%
+
+.center 
+    margin: 0 auto
+
+.center-xy
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+
+.center-self
+    justify-self: center 
+    align-self: center 
+    text-align: center
+.small 
+    font-size: $font-xs !important
+section 
+    position: relative
+    height: 100vh
+    width: 100vw
+    background: $black
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    &.main
+        background-image: url("../img/bg-main.png")
+    //&.login
+    //    background-image: url("../img/bg-bottom-top.png")
+    &.acquisition-criteria, &.buyer-seller
+        background-image: url("../img/bg-bottom-left.png")
+    
+    &.analyze, &.purchase-process
+        background-image: url("../img/bg-none.png")
+        h2 
+            text-transform: uppercase
+        p
+            font-family: "Century Gothic", sans-serif
+            text-transform: capitalize
+            font-weight: 100
+    &.login-fail, &.login-seller, &.login-buyer, &.login-check
+        background-image: url("../img/bg-bottom.png")
+    &.asking-price, &.price-high
+        background-image: url("../img/bg-citylights.png")
+    &.status-report, &.login-success, &.offer, &.counter-offer
+        background-image: url("../img/bg-none.png")
+    &.property, &.property-worth
+        background-image: url("../img/bg-top-right.png")
+        .main-titles 
+            min-width: 70%
+            top: 12vw
+            p 
+                padding-top: 0.5vw
+                padding-right: 3vw
+    &.property
+        .main-titles
+            position: absolute
+            left: 16vw
+    &.received-info, &.buyer-offers
+        background-image: url("../img/bg-city.png")
+
+section
+    &.login-fail, &.login-success, &.login-check
+        h1 
+            &:nth-child(2)
+                font-family: $font, sans-serif
+                line-height: 2vw
+
+.left 
+    background-image: url("../img/bg-left.png")
+    position: relative
+    background-repeat: no-repeat
+    background-size: cover
+
+.right 
+    background-image: url("../img/bg-right.png")
+    position: relative
+    background-repeat: no-repeat
+    background-size: cover
+    //&:not(.main)
+    //    display: none
+.uppercase 
+    text-transform: uppercase
+
+.bold
+    font-weight: 700 !important
+
+.display
+    display: block !important
+
+.main-titles-container
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-content: flex-start
+    .main-titles 
+        margin: auto 0
+        max-width: 40%
+        h1
+            text-transform: uppercase
+            font-weight: 200
+            font-size: $font-lg
+            line-height: 3vw
+            padding-top: 2.6vw
+        p 
+            max-width: 75%
+            font-size: $font-m
+            padding-top: 1.9vw
+            //text-transform: lowercase
+            line-height: 2vw
+            font-weight: 100
+            text-align: left !important
+        h1, p 
+            position: relative
+            z-index: 2
+            padding-left: 3.8vw
+.yellow-square 
+    height: 10.4vw
+    width: 10.4vw
+    background-color: #e4bf00
+    position: absolute
+    z-index: 0
+.space
+    margin-top: 1.042vw
+.space-l 
+    margin-top: 4vw
+.button-container 
+    position: relative
+    display: flex 
+    flex-direction: row 
+    //flex-wrap: wrap 
+    text-align: center 
+    justify-content: space-between 
+    padding-top: 4vw
+    max-width: 65% 
+
+.button
+    padding: 1.042vw 3.125vw 
+    font-size: $font-xs
+    &.yellow
+        background-color: $yellow
+        margin-right: 0.52vw
+    &.transparent
+        border: 0.05vw solid $yellow
+    &:first-child
+        margin-right: 8vw
+button
+    //margin-top: 1.5625vw
+
+
+.btn-container 
+    margin-bottom: 1.5625vw
+    //padding-top: 0.52vw
+    width: 50%
+    position: relative
+    input[type="file"] 
+        cursor: pointer 
+        padding: 0 
+        width: 100% 
+        height: 100% 
+        position: absolute 
+        left: 0%
+        top: 2% 
+        opacity: 0 
+        &:hover
+            cursor: pointer
+section
+    &.login-fail
+        input[type="file"]
+             left: 25%
+.fileContainer 
+    overflow: hidden 
+    position: relative 
+ 
+
+.fileContainer [type=file]  
+    cursor: inherit 
+    display: block 
+    font-size: 999px 
+    filter: alpha(opacity=0) 
+    min-height: 100% 
+    min-width: 100% 
+    opacity: 0 
+    position: absolute 
+    right: 0 
+    text-align: right 
+    top: 0 
+ 
+.upload-btn
+    border: 0.05vw solid $white 
+    background: transparent 
+    transition:         0.08s ease-in 
+    -o-transition:      0.08s ease-in 
+    -ms-transition:     0.08s ease-in 
+    -moz-transition:    0.08s ease-in 
+    -webkit-transition: 0.08s ease-in
+    overflow: hidden
+.upload-btn
+    width: 100%
+    padding: 1.042vw 0.78125vw 
+.back 
+    position: absolute
+    padding: 1.042vw 2vw 
+    max-width: 10vw
+    left: 6.5vw
+    top: 9.5vw
+    background-color: $yellow
+.upload-btn,
+.upload-btn i
+    color: $white
+ 
+
+.upload-btn i , a i
+    margin-right: 0.52vw 
+ 
+
+button:hover,
+.upload-btn:hover,
+.upload-btn-container input:hover  
+    cursor: pointer 
+ 
+.slide:after
+    content: "View detailed dashboard"
+    position: absolute
+    width: 100% 
+    height: 100% 
+    left: 0 
+    text-align: center 
+    -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550)  
+ 
+
+.slide:before  
+    content: "Read it →" 
+    height: 100% 
+    width: 100% 
+    position: absolute 
+    color: $white
+    left: -100% 
+    opacity: 0 
+    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550)  
+ 
+
+.slide:hover 
+    background: $yellow
+ 
+
+.slide:hover:before 
+    left: 0 
+    opacity: 1 
+    color: $white
+ 
+.slide:hover:after 
+    left: 100% 
+    opacity: 0
+ 
+
+.slide.left:hover 
+    background-color: $yellow
+ 
+
+.slide.left:before  
+    left: 100% 
+    color: $white
+    -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550)  
+ 
+
+.slide.left:hover:before 
+    left: 0 
+ 
+
+.btn 
+    padding: 1vw 4.8vw
+    background-color: $yellow
+    font-size: $font-m
+    border-color: $yellow
+    margin-right: 2vw
+    &:last-child
+        margin-right: 0
+
+.bottom-center
+    position: absolute
+    bottom: 8vw
+    left: 0
+    right: 0
+    margin-left: auto
+    margin-right: auto
+
+footer, #page-switcher-container
+    position: fixed
+    z-index: 10
+header
+    position: fixed
+    z-index: 20
+footer 
+    display: flex 
+    flex-direction: column 
+    position: fixed 
+    z-index: 10 
+    width: 100vw 
+    bottom: 0 
+    justify-content: space-between 
+    box-sizing: border-box 
+    flex-wrap: nowrap 
+
+.footer-content 
+    position: relative 
+    z-index: 10 
+    width: 100vw 
+    bottom: 0 
+    display: flex 
+    justify-content: space-between 
+    box-sizing: border-box 
+    flex-wrap: nowrap 
+    padding: 0 6.25vw  2.6042vw 6.35vw 
+
+
+header
+    box-sizing: border-box
+    width: 87%
+    left: 0
+    right: 0
+    margin: 0 auto
+    height: 6.25vw
+    display: flex
+    align-content: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 1.042vw 0 0 0
+    #logo  
+        position: relative
+        height: 3.125vw
+        width: 13.54vw
+        &:hover 
+            cursor: pointer
+    .search-bar
+        box-sizing: content-box
+        align-self: center
+        height: 1.563vw
+        width: auto
+        padding: 0 0.78125vw 0 10.42vw
+        
+    nav
+        display: flex
+        align-self: center
+        flex: 2
+        flex-direction: row
+        justify-content: flex-end
+        li 
+            display: inline-block
+            margin-right: 2.3vw
+            &:last-child
+                margin-right: 0 
+        a 
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: 100
+            font-size: $font-xs
+            font-family: $font
+            //&:hover
+            //    border-bottom: 1px solid $yellow
+            //    color: $yellow
+             
+             
+footer 
+    .icon 
+        display: inline-block
+        height: 1.042vw
+        width: 1.042vw
+        text-align: center
+        overflow: hidden
+        padding: 0.625vw
+        border: 0.05vw solid $white
+        margin-right: 1.5625vw
+        i  
+            font-size: 0.9375vw
+        //&:nth-of-type(even)
+        //display: none
+    #arrow 
+        height: 1.042vw
+        width: 1.042vw
+        text-align: center
+        display: flex
+        padding: 0.625vw
+        margin-right: 0.4vw
+        border: 0.05vw solid $white
+        i
+            font-size: 1.3vw
+    .social-icons, #arrow
+        max-width: 45%
+    .subscribe
+        display: inline-block
+        input
+            padding: 0.78125vw 
+            width: 16vw
+            background-color: transparent 
+            margin-right: 0.3vw
+            
+
+.currency 
+    display: flex 
+    position: relative 
+    bottom: 0 
+    z-index: 2 
+    height: 6.25vw 
+    width: 100vw 
+    background-color: $white
+
+.icon, #arrow 
+    transition: 0.2s ease
+    &:hover *
+        color: $yellow
+        cursor: pointer
+    &:hover
+        cursor: pointer
+        border: 0.05vw solid $yellow
+
+#page-switcher-container
+    display: flex
+    height: 100vh
+    right: 6.25vw
+    ul 
+        margin: auto
+        li 
+            padding: 0.8vw
+            a 
+                font-size: $font-xs
+                font-family: $font
+
+.bg-yellow 
+    background-color: $yellow
+
+.form-container
+    display: flex 
+    justify-content: center 
+    width: 50% 
+    margin: 0 auto 
+    //padding-top: 1.5625vw
+    form  
+        margin: auto 
+        width: 80% 
+        display: flex 
+        flex-direction: column 
+        input, textarea, select  
+            padding: 0.78125vw 
+            font-size: $font-xs 
+            background: transparent 
+            border: 0.05vw solid #fff 
+            margin-bottom: 1.5625vw 
+            box-sizing: border-box 
+        select 
+            text-align: center
+            text-align-last: center
+        h3, .upload-btn, .submit-btn
+            text-transform: capitalize 
+            font-size: $font-xs
+            font-weight: 100 
+        .form-line
+            display: flex
+            justify-content: space-between
+            input
+                width: 48%
+        textarea 
+            resize: none
+            width: 100%
+            height: 6.25vw
+    &.property-info
+        input:not([name="address"]), .upload-btn, select
+            background-color: $yellow 
+            text-align: center
+            //margin-bottom: 0.9375vw
+             
+            &::placeholder
+                color: $white
+        .upload-btn 
+            padding: 0.75vw 0.78125vw
+        .upload-btn, .upload-btn i 
+            color: $white
+            border: none
+        input:not([name="address"]), select
+            border: none
+        button[type="submit"]
+            margin-top: 1.5625vw
+        .row:nth-child(4)
+                input
+                    background-color: transparent 
+                    border: 0.05vw solid $yellow 
+    &.offer
+        height: 100vh
+        input 
+            margin: 0
+            border: none
+            &:focus
+                border: none !important
+        tr 
+            td  
+                padding: 0.52vw 1.042vw 1.042vw 1.5625vw
+    &.counter-offer, &.offer
+        table 
+            width: 70%
+        input
+            width: 100%
+            padding: 20px
+    &.counter-offer 
+        input
+            border: 1px solid $white
+            padding: 10px
+            &:focus
+                border: 1px solid $white !important
+            &.changed
+                border: 1px solid $yellow
+                &:focus 
+                    border: 1px solid $yellow !important
+        h6 
+            display: inline
+.upload-success
+    border: 0.05vw solid $yellow 
+.row
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    max-height: 4.166vw
+
+.process-diagram
+    position: relative
+    text-align: center
+    font-size: $font-s
+    padding-bottom: 10vw
+    a 
+        background-color: transparent 
+        border: 0.05vw solid $yellow
+        width: 30%
+        padding-left: 0
+        padding-right: 0
+    div.bg-yellow
+        width: 30%
+        padding: 1vw 0
+    .diagram
+        position: relative
+        z-index: 40 
+
+.absolute
+    position: absolute
+.half-height
+    height: 30vh !important
+
+    
+.title
+    text-transform: uppercase 
+    font-weight: 500
+    font-size: 2vw 
+    padding-bottom: 1.5625vw 
+    text-align: center 
+
+label 
+    padding-bottom: 1.2vw
+    font-size: $font-xs
+    font-weight: 100
+    text-transform: capitalize
+    font-family: $font
+
+button[type="submit"]
+    min-width: 10vw
+    height:  2.6042vw
+
+.split-container
+    height: 100vh
+    width: 100vw
+    display: flex
+    flex-direction: row
+
+.half 
+    max-width: 50%
+
+.one-third
+    width: 30%
+.split 
+    flex: 1
+    height: 100%
+
+.full-width 
+    .main-titles-container
+        padding-left: 3.5vw
+        .main-titles
+            max-width: 40%
+            p 
+                width: 55%
+
+ul.check   
+    max-width: 30%  
+    li 
+        margin: 0  
+        padding: 1.302vw 0 0.78125vw 1.5625vw  
+        list-style: none  
+        background-image: url("../img/checked.svg")  
+        background-repeat: no-repeat  
+        background-position: left center  
+        background-size: 0.78125vw  
+        font-size: 1.25vw  
+        font-weight: 100  
+        line-height: 1.458vw 
+
+.numbers-container   
+    padding-top:  2.6042vw  
+    width: 80%  
+    display: flex  
+    flex-direction: row  
+    justify-content: space-between  
+    align-self: center  
+    flex-wrap: wrap  
+  
+
+.numbers-container .item   
+    max-width: 23%  
+    margin-right: 0.78125vw  
+  
+
+.numbers-container .item h1   
+    font-size: 4.0625vw  
+    font-weight: 700  
+    text-align: center  
+  
+
+.numbers-container .item span   
+    font-weight: 100  
+    color: $yellow
+  
+
+.numbers-container .item p,
+.container p   
+    padding-top: 0.52vw  
+    font-size: 1.458vw  
+    text-align: center  
+  
+table 
+    font-size: $font-xs
+    &.offer-data
+        border: 0.05vw solid $yellow
+        background-color: $grey
+    tr 
+        td
+            padding: 1.302vw 0.52vw 0px 0.52vw
+            &:last-child
+                padding-right: 1.302vw !important
+    &:first-child
+        padding-top: 1.042vw
+    input
+        background-color: transparent 
+        border-color: $yellow
+        padding: 1.302vw 3.125vw 1.302vw 1.302vw
+
+table 
+    padding: 0.52vw
+    &.offers-list
+        td 
+            border: 0.05vw solid $white
+            text-align: center
+            font-size: $font-xs
+            line-height: 1.25vw
+            width: 80%
+        tr 
+            &:first-child
+                td 
+                    border-top: 0
+            &:last-child
+                td 
+                    border-bottom: 0
+            td 
+                &:first-child
+                    border-left: 0
+                    text-align: left
+                &:last-child
+                    padding-right: 0 !important
+                ul 
+                    list-style-type: disc
+                    li 
+                        padding-top: 0.52vw
+
+                &:last-child
+                    border-right: 0
+                    border-left: 0
+                    border-bottom: 0
+        thead 
+            tr
+                border-bottom: 0
+            td 
+                border-left: 0
+                border-right: 0
+                &:not(:first-child)
+                    text-align: center
+                    padding: 1.302vw 1.302vw 0 1.302vw
+        tbody
+            td
+                &:not(:first-child)
+                    color: $yellow
+                    font-size: $font-s
+                    font-family: $font
+                    padding: 1.302vw
+                    text-transform: uppercase
+    &.tours-schedule
+        tr
+            td 
+                border-right: 0.05vw solid $white !important
+                padding: 1.40625vw 1.042vw
+                text-align: center
+                &:first-child
+                    text-align: left !important
+span
+    color: $yellow
+.one-fourth
+    max-width: 25%
+.page-switcher-active 
+    background-color: $yellow
+.corners  
+    position: relative 
+    margin: 1.042vw 
+    margin-left: 0
+    border: 0.2604vw solid #000 
+    &.userpic-container
+        width: 8.3vw 
+        height: 8.3vw 
+        img 
+            height: 100%
+            width: auto
+    &.propertypic-container
+        width: 16.6vw 
+        height: 10.4vw 
+        img 
+            height: 100%
+            width: auto
+    &:before, &:after
+        display: block 
+        content: "" 
+        width: 1.042vw 
+        height: 1.042vw 
+        position: absolute 
+        top: -0.5208vw
+        border-top: 0.2604vw solid $yellow  
+    &:before
+        left: -0.5208vw 
+        border-left: 0.2604vw solid $yellow 
+    span
+        &:after 
+            display: block 
+            content: "" 
+            width: 1.042vw 
+            height: 1.042vw 
+            position: absolute 
+            bottom: -0.5208vw 
+            border-bottom: 0.2604vw solid $yellow 
+        &:before
+            left: -0.5208vw 
+            border-left: 0.2604vw solid $yellow
+        &:after  
+            right: -0.5208vw 
+            border-right: 0.2604vw solid $yellow 
+
+.accept-counter
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    .accept
+        margin-bottom: 2.083vw
+        background-color: $yellow
+    .counter  
+        background-color: transparent
+        border: 0.05vw solid $white
+//.counter-offer
+  //  .offer-data
+    //    tr 
+      //      td
+        //        padding: 0.52vw 1.042vw 1.042vw 1.5625vw
+          //      &:nth-child(2)
+            //        padding: 1.3vw 1.842vw 1.842vw 2.3625vw
+              //  &.changed
+                //    color: $yellow  
+        //input
+          //   padding: 1.302vw 3.125vw 1.302vw 1.302vw
+            // margin-bottom:      
+.seller-offers
+    height: 100%
+    .container
+        width: 85%
+        padding: 10.42vw 0
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        .user-info-container
+            flex: 1
+            border-right: 0.05vw solid $white
+            margin-right: 1.5625vw
+            font-size: $font-s
+        .content
+            flex: 5
+        .content-top
+            display: flex 
+            flex-direction: row
+            flex-wrap: nowrap
+            align-content: stretch
+            .tours-schedule
+                border-right: 0.05vw solid $white
+                border-left: 0.05vw solid $white
+            .diagram, .tours-schedule
+                flex: 2
+                padding: 1.042vw 0 1.042vw 1.042vw
+            .property-info-container 
+                flex: 1
+                padding: 1.042vw
+            .diagram
+                width: 23.18vw
+                height: 15.625vw
+                img 
+                    height: 100%
+                    width: auto
+            h3 
+                padding-bottom: 0.52vw
+                font-size: $font-s
+                line-height: 1.5625vw
+    i 
+        padding-right: 0.4vw
+    ul 
+        padding-top: 0.5vw
+        li
+            padding-bottom: 0.5vw
+            list-style-type: disc
+
+.large
+    font-size: $font-xlg
+    padding-right: 1.042vw
+.big 
+    font-size: $font-m
+.split.left 
+    .button-container 
+        display: none
+
+.svg-container
+    position: absolute
+    display: block
+    height: 10.83vw
+    width: 50vw
+    overflow: hidden
+    svg
+        display: block
+        width: 100%
+        height: auto
+        stroke: $yellow
+        stroke-width: 1
+.properties 
+    display: flex
+    flex-direction: column
+    align-content: space-between
+    margin-top: 3vw
+    width: 70%
+.info-box
+    display: flex
+    flex-direction: row
+    margin-bottom: 1.5vw
+    .info
+        flex: 5
+        text-align: left
+        margin-right: 3vw
+        font-size: $font-s
+        padding: 1vw
+        border: 1px solid $white
+    button
+        flex: 1
+#search-field
+    margin-left: 1vw
+    width: 20%
+    height: 50%
+    align-self: center
+    position: relative
+    z-index: 30
+#search
+    float: right
+    display: block 
+    width: 90% 
+    height: 100%
+    //margin: 7% auto 0
+    input[type="search"] 
+        justify-self: center
+        float: right
+        display:block 
+        margin: 0 0 0 auto 
+        width: 2.4vw
+        box-sizing: border-box 
+        border: none
+        border-radius: 6px 
+        font-size: $font-xs
+        background-color: transparent 
+        background-image: url('../img/search.svg')
+        background-size: 1.1vw auto
+        background-position: 0.52vw 0.52vw
+        background-repeat: no-repeat 
+        padding: 0.625vw 0vw 0.625vw 2.3vw 
+        -webkit-transition: width 0.4s ease-in-out 
+        transition: width 0.4s ease-in-out 
+    input[type="search"]:focus  
+        width: 100% 
+        border: 1px solid $yellow
+    input[type=search]::-ms-clear,
+    input[type=search]::-ms-reveal 
+        display: none
+        width : 0
+        height: 0
+
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration
+        display: none
+
+
+
+
+ 
+ 
+/////// process
+$tick-size: 20px
+
+.process-wrapper 
+    font-family: $font-primary
+    height: 70%
+    width: 95%
+    display: flex 
+    flex-direction: row 
+    flex-wrap: wrap 
+    justify-content: stretch
+    align-items: stretch
+    .process-step 
+        flex: 1
+        margin-right: 20px
+        font-weight: 300
+        display: flex 
+        flex-direction: column 
+        justify-content: space-between
+        &.active
+            flex-grow: 1.6
+            .process-title 
+                span.step-number 
+                    background-color: $yellow 
+                    border-color: $yellow
+            .process-content 
+                border: 1px solid $yellow
+                button 
+                    padding: 10px 20px 
+                    font-size: $font-s
+                    margin: 0 20px
+                    display: block
+                .tick 
+                    width: 50px 
+                    height: 50px
+        &.disabled 
+            button, .tick 
+                color: darken($white, 50%)
+                border-color: darken($white, 50%) !important
+            button
+                &:hover
+                    border-color: darken($white, 50%) !important
+                    cursor: auto
+
+
+        .process-title 
+            font-family: $font
+            font-size: $font-m
+            text-align: center
+            text-transform: capitalize
+            span.step-number 
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                width: 50px 
+                height: 50px 
+                text-align: center 
+                vertical-align: middle
+                line-height: 50px
+                border: 1px solid $white
+                color: $white
+                font-weight: 200
+        .process-content 
+            padding: 30px 15px 30px 30px
+            background-color: $grey
+            border-color: yellow
+            height: 350px
+            margin-bottom: 100px
+            ul 
+                height: 100%
+                display: flex 
+                flex-direction: column !important
+                justify-content: space-between
+                li 
+                    display: flex 
+                    flex-direction: row
+                    margin-bottom: 30px
+                    &:last-child 
+                        margin-bottom: 0
+                    
+                    button 
+                        font-family: $font
+                        font-size: $font-xs
+                        border: 0.5px solid $white
+                        padding: 2px 15px
+                        //flex: 1
+                        margin-left: 10px
+                        text-align: center 
+                        vertical-align: middle
+                        text-transform: capitalize
+                        text-align: left
+                        &:hover 
+                            border: 0.5px solid $yellow
+                            background-color: none
+                        &.active 
+                            background-color: $yellow 
+                            border: none
+                        &:disabled 
+                            color: darken($white, 50%)
+                            border-color: darken($white, 50%) !important
+                            &:hover 
+                                border-color: darken($white, 50%) !important
+                                color: darken($white, 50%)
+
+
+
+.tick 
+    width: 40px
+    height: 40px
+    display: inline-block
+    border: 0.5px solid $white
+    background: url("../img/check-mark-thin.svg") 50% 40%
+    background-size: 60% 60%
+    background-repeat: no-repeat
+    &.active
+        border-color: $yellow
+    &.done 
+        background-color: $yellow
+        border: none
+
+////// lawyers etc
+form 
+    &.lawyers 
+        margin: 0 auto
+        display: flex 
+        flex-direction: column
+        button 
+            box-sizing: border-box
+            background-color: $yellow
+            padding: 6px 10px
+            font-size: 18px
+            font-family: $font
+            width: 350px
+            height: 45px
+    .choose-all-wrapper 
+        width: 100% 
+        display: flex 
+        flex-direction: row 
+        justify-content: flex-end
+    label.choose-all 
+        font-size: 24px 
+        font-family: $font
+        justify-items: right
+        width: 230px
+        height: 60px
+        line-height: normal
+        position: relative
+        padding: 0
+        display: flex 
+        text-align: right
+        flex-direction: row
+        align-items: center
+        justify-self: right
+        margin-bottom: 10px
+        input 
+            float: right
+            top: 5px
+            right: 30px
+        .tick 
+            margin-left: 15px
+*:last-child > .person-card:last-child 
+    margin-bottom: 0
+.person-card 
+    box-sizing: border-box
+    background-color: $grey 
+    max-width: 900px 
+    height: 270px
+    position: relative
+    padding: 30px 60px 20px 30px
+    display: flex 
+    flex-direction: column
+    font-size: 20px 
+    font-weight: 300
+    border: 2px solid $yellow
+    margin-bottom: 10px
+    .content 
+        display: flex 
+        flex-direction: row
+        .rating 
+            display: flex 
+            flex-direction: row
+            width: 300px
+            vertical-align: top
+            .dv-star-rating 
+                margin-right: 5px
+        .name 
+            padding-bottom: 10px
+            font-size: 24px
+            line-height: 32px
+        div:nth-child(2)
+            //margin-right: 30px
+        div:nth-child(3) 
+            p:nth-child(2) 
+                max-width: 80%
+    .avatar 
+        display: inline-block
+        width: 100px
+        height: 100px 
+        margin-right: 20px
+        img 
+            width: 100% 
+            height: 100%
+    .tick 
+        position: absolute
+        top: 40px
+        right: 40px
+    .company 
+        margin-bottom: 85px
+    p, span, li
+        font-size: 14px
+        font-family: $font
+        padding: 0
+        text-align: left
+        line-height: 18px
+        text-transform: none
+
+    .request 
+        margin-top: 20px
+        display: flex 
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        vertical-align: bottom
+        button 
+            margin-right: 20px
+            margin-top: 0
+input[type="checkbox"]
+    -webkit-appearance: none
+    width: 40px 
+    height: 40px
+    background-color: transparent
+    border: 1px solid $yellow
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05)
+    padding: 9px
+    display: inline-block
+    position: absolute
+    font-size: 14px
+    font-family: "Material Icons"
+    content: '\e5ca'
+    top: 30px
+    right: 30px
+    cursor: pointer
+    font-family: "Material Icons"
+    content: '\e5ca' 
+    font-size: 14px 
+    position: absolute 
+    color: $white
+    font-size: 30px
+
+    &:active, &:checked:active
+        box-shadow: 0 1px 2px $yellow, inset 0px 1px 3px $yellow
+    &:checked
+        background-color: $yellow
+        border: 1px solid $yellow
+        box-shadow: 0 1px 2px $yellow, inset 0px -15px 10px -12px $yellow, inset 15px 10px -12px $yellow
+        color: $white
+    &:checked:after 
+        font-family: "Material Icons"
+        content: '\e5ca' 
+        font-size: 14px 
+        position: absolute 
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: $white
+        font-size: 30px
+
+
+
+    

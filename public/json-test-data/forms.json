@@ -1,0 +1,20 @@
+{
+    "login": {
+        "type": "object",
+        "required": [
+        "email",
+        "cellphone"
+        ],
+        "properties": {
+            "email": {
+                "type": "string",
+                "title": "Email"
+            },
+            "cellphone": {
+                "type": "number",
+                "title": "Cell phone"
+            }
+        },
+        "uiOrder": ["email", "cellphone"]
+    }
+}

@@ -1,0 +1,361 @@
+
+//@media (min-width: 768px) and (max-width: 1024px) 
+  
+  //CSS
+  
+
+
+@media (min-width: 768px) and (max-width: 1024px) 
+    .main-titles-container
+        .main-titles
+            min-width: 55%
+            h1 
+                font-size: 3.5vw 
+                line-height: 3.8vw
+            p 
+                font-size: 2vw
+                line-height: 2.5vw
+    .yellow-square 
+        height: 14vw
+        width: 14vw
+    .button-container
+        max-width: 80%
+    .btn
+        padding: 1.2vw 5.5vw
+        font-size: 2.2vw
+    footer 
+        .icon, #arrow 
+            width: 1.2vw
+            height: 1.2vw
+            padding: 1vw
+            i 
+                font-size: 1.3vw
+    .form-container
+        //width: 60%
+    section.received-info
+        .btn 
+            width: 50%
+    section.property 
+        .main-titles 
+            top: 20vw
+    .process-diagram
+            div.bg-yellow 
+                height: 1.5vw
+                font-size: 2.2vw
+    
+
+@media (min-width: 481px) and (max-width: 767px) 
+    .main-titles-container
+        .main-titles
+            min-width: 70%
+            h1 
+                font-size: 4.5vw 
+                line-height: 4.9vw
+            p 
+                font-size: 2.5vw
+                line-height: 3vw   
+            h1, p 
+                padding-top: 3.4vw
+                padding-left: 5vw       
+    .yellow-square 
+        height: 16vw
+        width: 16vw
+    .button-container
+        max-width: 85%
+    .btn
+        padding: 1.4vw 8vw
+        font-size: 2.5vw
+    footer 
+        .icon, #arrow
+            width: 1.5vw
+            height: 1.5vw
+            padding: 1.7vw
+            i 
+                font-size: 1.5vw
+    
+
+@media (min-width: 0px) and (max-width: 480px)
+    header
+        #logo 
+            height: 4vw
+            width: 18vw
+        nav 
+            a 
+                font-size: 1.4vw 
+    .main-titles-container
+        .main-titles
+            min-width: 80%
+            h1 
+                font-size: 5vw 
+                line-height: 5.3vw
+            p 
+                font-size: 3.2vw
+                line-height: 3.6vw
+            h1, p 
+                padding-top: 5vw
+                padding-left: 6vw
+    .yellow-square 
+        height: 18vw
+        width: 18vw
+    .button-container
+        max-width: 80%
+    .btn
+        padding: 1.6vw 8.3vw
+        font-size: 2.6vw
+    footer 
+        .social-icons
+            max-width: 60%
+        .icon
+            width: 2.4vw
+            height: 2.4vw
+            padding: 0.5vw 1.5vw 3vw 2vw
+            i 
+                font-size: 2vw
+        #arrow
+            width: 2.4vw
+            height: 2.4vw
+            padding: 0.5vw 2vw 3vw 1.5vw
+            display: flex
+            justify-content: center
+            align-content: center
+            i 
+                margin: auto
+                font-size: 2.5vw
+
+
+@media (max-width: 767px)
+    .form-container
+        width: 80%
+        form
+            input, textarea, select
+                font-size: 2vw
+                padding: 2vw
+                margin-bottom: 3vw
+            textarea
+                height: 12vw
+            .btn-container
+                height: 7vw
+                .upload-btn
+                    height: 100%
+                    font-size: 1.5vw
+            .submit-btn
+                font-size: 2vw
+    section.acquisition-criteria, section.asking-price
+        .form-container
+            form 
+                input, textarea
+                    min-width: 100% !important
+            .form-line
+                flex-wrap: wrap
+            .btn-container
+                min-width: 100% !important
+    label
+        font-size: 2vw
+        padding-bottom: 2vw
+    .title
+        font-size: 4vw
+        padding-bottom: 3vw
+
+    section.property, section.login-success, section.buyer-offers, section.price-high
+        .container
+            h1 
+                &:nth-child(2)
+                    font-size: 3.5vw
+            p 
+                font-size: 3vw
+
+    button[type="submit"] 
+        width: 20vw
+        height: 6vw
+        font-size: 2vw
+    header
+        padding-top: 2vw
+        #logo 
+            height: 4vw
+            width: 18vw
+        nav 
+            a 
+                font-size: 1.6vw
+    #page-switcher-container
+        ul 
+            li 
+                padding: 1.2vw
+                a 
+                    font-size: 1.6vw    
+    .currency
+        height: 8vw
+    .container
+        .properties
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+            .info-box
+                flex-direction: column
+                width: 45%
+                margin-bottom: 6vw
+                &:child-of-type(even)
+                    margin-right: 2vw
+                .info
+                    margin-right: 0
+                    flex: 4
+                    margin-bottom: 2vw
+                    font-size: 2vw
+                    padding-top: 2vw
+                    padding-bottom: 2vw
+                button
+                    padding-top: 2vw
+                    padding-bottom: 2vw
+                    flex: 1
+                    font-size: 1.5vw
+    .split.left
+        .full-width 
+            .main-titles-container 
+                .main-titles
+                    min-width: 90%
+        .button-container
+            margin-top: 6vw
+            display: flex;
+            justify-content: space-around
+            max-width: 80% !important
+            .button 
+                min-width: 25%
+                font-size: 2.5vw
+                padding: 2vw 4vw
+
+    .split.right
+        display: none
+    section.received-info
+        ul.check
+            max-width: 60%
+            li 
+                font-size: 2.3vw
+                margin-bottom: 2vw
+                background-size: 1.5vw
+                padding-left: 4vw
+                line-height: 2.7vw
+        .btn 
+            width: 50%
+    .numbers-container
+        .item
+            min-width: 45%
+            margin-bottom: 4vw
+            h1 
+                font-size: 7vw
+            p
+                font-size: 2.5vw
+    .status-report
+        button 
+            padding: 2vw 4vw
+            font-size: 2.5vw
+            width: 50%
+    #sign 
+        padding: 2vw 5vw
+        max-width: 70%
+    button 
+        padding: 2vw 4vw
+        font-size: 2.5vw
+        max-width: 100%
+    section.property 
+        .main-titles 
+            top: 25vw
+        .form-container
+            form 
+                width: 95%
+                .row 
+                    max-height: 20vw
+                input 
+                    font-size: 2.2vw
+                button 
+                    font-size: 2.2vw !important
+    section.login-fail 
+        h1 
+            &:nth-child(2)
+                line-height: 5vw
+        .container
+            width: 75%
+        .form-container 
+            form 
+                .btn-container 
+                    .upload-btn 
+                        font-size: 2.5vw
+                        max-width: 85% !important
+    section.seller-offers 
+        body 
+            background-color: black
+        .container
+            flex-direction: column
+            .user-info-container
+                margin: 0 auto
+                border-right: none
+                font-size: 1.4vw
+                display: flex
+                flex-direction: row
+                margin-bottom: 4vw
+                .userpic-container
+                    margin-right: 6vw
+                .user-info
+                    height: 100%
+            .content-top 
+                .diagram, .tours-schedule
+                    flex: 1
+            table.offers-list 
+                width: 95%
+                margin-top: 4vw
+                td 
+                    font-size: 1.5vw
+                    line-height: 2.1vw
+            table.tours-schedule
+                td 
+                    font-size: 1.2vw
+                    line-height: 1.5vw
+        .process-diagram
+            padding-bottom: 55%
+            padding-top: 10vw
+            div.bg-yellow 
+                height: 2vw
+                width: 40%
+                font-size: 2.5vw
+            a 
+                padding-bottom: 3.5vw
+    section.offer 
+        .back
+            max-width: 50vw
+        .form-container
+            max-width: 90%
+            &.offer
+                td 
+                    font-size: 2vw
+                input 
+                    font-size: 2vw
+    input[type="search"]
+        background-size: 10vw auto
+        
+
+
+
+
+@media (max-width: 480px)
+    .numbers-container
+        justify-content: center
+        .item
+            min-width: 70%
+            h1 
+                font-size: 9vw
+            p
+                font-size: 3.5vw
+    section.property 
+        .main-titles 
+            top: 50vw
+    .back 
+        max-width: 20vw
+    section.offer 
+        .back
+            max-width: 50vw
+        .form-container
+            max-width: 90%
+            &.offer
+                td 
+                    font-size: 2vw
+                    padding: 2.52vw 2.042vw 2.042vw 4.5625vw
+                input 
+                    font-size: 2vw

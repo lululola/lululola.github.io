@@ -1,0 +1,155 @@
+
+
+
+  .CalendarDay__default {
+    color: white;
+    background-color: black;
+    border: none; 
+}
+  .CalendarDay__selected:hover {
+    background: #e4bf00;
+    color: white;
+    border: none
+  }
+  .CalendarDay__selected {
+    background-color: #e4bf00;
+    color: white;
+    border: none
+  }
+  
+.CalendarDay__selected_span {
+    background-color: #e4bf00;
+    color: white; 
+    border: 1px solid #e4bf00
+  }
+  .CalendarDay__hovered_span:hover,
+  .CalendarDay__hovered_span {
+    background: #e4bf00;
+    border: 0.5 solid white;
+    color: white
+  }
+  .DateRangePickerInput_arrow_svg {
+      fill: white;
+  }
+  .DateInput {
+      background-color: transparent;
+      color: white
+  }
+
+  input.DateInput_input:focus, textarea.DateInput_input:focus {
+      border: none !important;
+  }
+
+  .DateRangePickerInput {
+      background-color: transparent;
+  }
+  .DateRangePickerInput:focus {
+      border: none
+  }
+  .DateInput_input {
+      background-color: transparent;
+      color: white 
+
+  }
+  .DateInput_input__focused_2 {
+    border: none
+  }
+  .DateInput_input {
+      color: white
+  }
+
+  .DayPickerNavigation_svg__horizontal {
+      fill: #e4bf00;
+  }
+  .DayPicker__horizontal {
+      background-color: transparent;
+  }
+
+  .process-wrapper .process-step.active .process-content button {
+      display: none
+  }
+
+  .CalendarDay {
+      vertical-align: middle;
+      padding: 2px
+
+  }
+  .CalendarDay:hover {
+      border: none
+  }
+  
+  table tr td.CalendarDay:last-child {
+      padding-right: 0px !important;
+  }
+
+  table tr td.CalendarDay:hover {
+      cursor: pointer;
+      color: white;
+  }
+
+  .CalendarMonth_table tr td {
+    padding: 0 !important;
+  }
+     
+  input:focus {
+      border: none
+  }
+
+  .DateRangePickerInput__withBorder { 
+      border: 1px solid #e4bf00
+  }
+
+  .DateInput_input__focused, .DateInput_input__focused_2 {
+      border: none
+  }
+
+  .CalendarMonthGrid {
+      background-color: black;
+      
+  }
+
+  .CalendarMonth {
+      background-color: black;
+  }
+
+  .CalendarDay__default:hover {
+      background-color: none;
+  }
+
+  td:hover {
+      background-color: none;
+  }
+  .DayPickerNavigation_button__default {
+      background-color: transparent;
+  }
+
+  .process-wrapper .process-step .process-content ul {
+      flex-direction: row !important;
+  }
+  .DayPicker_weekHeaders__horizontal {
+      margin-left: 20px;
+  }
+  .CalendarMonth_caption {
+      padding-bottom: 60px;
+  }
+  .DateRangePicker_picker {
+      background-color: black;
+      border: 1px solid #e4bf00;
+  }
+
+  .DayPickerNavigation_button__default {
+      border: 1px solid #e4bf00;
+  }
+
+  .DayPickerNavigation_button__default:active {
+      background-color: transparent;
+      outline: none
+  }
+
+  .DayPickerNavigation_button__default:hover {
+      border: 1px solid #e4bf00;
+  }
+
+  .CalendarDay__default:hover {
+      background-color: #e4bf00;
+  }

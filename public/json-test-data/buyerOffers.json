@@ -1,0 +1,26 @@
+[
+        {
+            "neighbourhood": "Upper East Side",
+            "sf": 2500,
+            "type": "multifamily",
+            "cap": 4.5
+        },
+        {
+            "neighbourhood": "Upper West Side",
+            "sf": 1200,
+            "type": "studio",
+            "cap": 6
+        },
+        {
+            "neighbourhood": "Upper East Side",
+            "sf": 2500,
+            "type": "multifamily",
+            "cap": 4.5
+        },
+        {
+            "neighbourhood": "Upper West Side",
+            "sf": 1200,
+            "type": "studio",
+            "cap": 6
+        }
+    ]

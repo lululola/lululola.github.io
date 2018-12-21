@@ -1,0 +1,10 @@
+{
+    "counterForm": true,
+    "address": "This is the address",
+    "price": 500000,
+    "deposit": 50000,
+    "closing": "2 weeks",
+    "financing": "All cash",
+    "conditions": true,
+    "attorney": "Name Surname"
+}
